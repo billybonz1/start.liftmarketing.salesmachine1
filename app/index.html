@@ -63,22 +63,22 @@
 						<div class="col-md-6 md-right-pix">
 							<ul class="top-menu">
 								<li>
-									<a href="#speakers">
+									<a href="#speakers" class="toId">
 										<span>Спикеры</span>
 									</a>
 								</li>
 								<li>
-									<a href="#program">
+									<a href="#program" class="toId">
 										<span>Программа</span>
 									</a>
 								</li>
 								<li>
-									<a href="#forwhom">
+									<a href="#forwhom" class="toId">
 										<span>Для кого</span>
 									</a>
 								</li>
 								<li>
-									<a href="#popup" class="with-popup">
+									<a href="#popup" class="with-popup toId">
 										<span>Принять участие</span>
 									</a>
 								</li>
@@ -388,7 +388,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="sellsystem">
+	<div class="sellsystem" id="forwhom">
 		<div class="inner">
 			<div class="container-fluid">
 				<div class="row">
@@ -657,6 +657,7 @@
 					</div>
 					<div class="realise__content__item">
 						<div class="border-item3"></div>
+						<div class="border-item4"></div>
 						<div class="realise__content__item__left">
 							<img src="img/how4.png" alt="">
 							<div class="circle">3</div>
@@ -672,6 +673,7 @@
 						</div>
 					</div>
 					<div class="realise__content__item">
+						<div class="border-item5"></div>
 						<div class="realise__content__item__left">
 							<img src="img/how5.png" alt="">
 							<div class="circle">5</div>
@@ -693,11 +695,11 @@
 								план в деталях?
 							</h2>
 						</div>
-						<button type="submit" name="submit-button" class="submit-button moonray-form-input"
+						<a href="#popup" class="toId submit-button moonray-form-input"
 								id="mr-field-element-805401784135" src
 								data-lastDisplayVal="&ETH;�&ETH;&deg;&ETH;&plusmn;&Ntilde;�&ETH;&frac34;&ETH;&frac12;&ETH;&cedil;&Ntilde;�&ETH;&frac34;&ETH;&sup2;&ETH;&deg;&Ntilde;�&Ntilde;� &ETH;&frac14;&ETH;&micro;&Ntilde;�&Ntilde;�&ETH;&frac34; &ETH;&frac12;&ETH;&deg; &Ntilde;�&ETH;&micro;&ETH;&frac14;&ETH;&cedil;&ETH;&frac12;&ETH;&deg;&Ntilde;�-&ETH;&iquest;&Ntilde;�&ETH;&deg;&ETH;&ordm;&Ntilde;�&ETH;&cedil;&ETH;&ordm;&Ntilde;�&ETH;&frac14;">
 							<span>Регистрируйтесь на практикум</span>
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -784,7 +786,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="questions-for">
+	<div class="questions-for" id="program">
 		<div class="inner">
 			<div class="container-fluid">
 				<div class="row">
@@ -878,7 +880,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="book">
+	<div class="book" id="popup">
 		<div class="inner">
 			<div class="container-fluid">
 				<div class="row">
@@ -896,14 +898,26 @@
 							<li>Аудит одного скрипта разговора для<br> вашей компании нашим главным коучем<br> отдела продаж</li>
 						</ul>
 					</div>
-					<div class="col-md-6">
-						<form>
-							<img src="img/line.png">
+					<div class="col-md-6 moonray-form-p2c80476f190">
+						<form class="moonray-form-clearfix" action="https://forms.ontraport.com/v2.4/form_processor.php?" method="post" accept-charset="UTF-8">
+							<img src="img/line.png" class="top-img">
 							<p>Оставьте свои данные ниже, чтобы<br>забронировать раннюю цену на воркшоп!</p>
-							<input type="text" placeholder="Ваше имя...">
-							<input type="text" placeholder="Ваш email">
-							<input type="text" placeholder="Ваш номер телефона">
-							<button class="submit-button">Регистрируйтесь на практикум</button>
+							<div class="book-input">
+								<input name="firstname" required type="text" class="moonray-form-input" id="mr-field-element-249110145727" placeholder="Ваше имя...">
+							</div>
+							<div class="book-input">
+								<input name="email" type="email" class="moonray-form-input" id="mr-field-element-747021684655" required value="" placeholder="Ваш email"/>
+							</div>
+							<div class="book-input">
+								<input name="sms_number" required type="tel" class="moonray-form-input"
+									   id="mr-field-element-358737003291"  placeholder="Ваш телефон"/>
+							</div>
+							<button type="submit" name="submit-button" class="submit-button moonray-form-input"
+									id="mr-field-element-805401784135" src
+									data-lastDisplayVal="&ETH;�&ETH;&deg;&ETH;&plusmn;&Ntilde;�&ETH;&frac34;&ETH;&frac12;&ETH;&cedil;&Ntilde;�&ETH;&frac34;&ETH;&sup2;&ETH;&deg;&Ntilde;�&Ntilde;� &ETH;&frac14;&ETH;&micro;&Ntilde;�&Ntilde;�&ETH;&frac34; &ETH;&frac12;&ETH;&deg; &Ntilde;�&ETH;&micro;&ETH;&frac14;&ETH;&cedil;&ETH;&frac12;&ETH;&deg;&Ntilde;�-&ETH;&iquest;&Ntilde;�&ETH;&deg;&ETH;&ordm;&Ntilde;�&ETH;&cedil;&ETH;&ordm;&Ntilde;�&ETH;&frac14;">
+								<span>Регистрируйтесь на практикум</span>
+							</button>
+
 						</form>
 					</div>
 				</div>
@@ -1165,7 +1179,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="partners">
+	<div class="partners" id="speakers">
 		<div class="inner">
 			<div class="container-fluid">
 				<div class="row marg-top">
@@ -1336,22 +1350,22 @@
 						<div class="col-md-6 md-right-pix">
 							<ul class="top-menu">
 								<li>
-									<a href="#speakers">
+									<a href="#speakers" class="toId">
 										<span>Спикеры</span>
 									</a>
 								</li>
 								<li>
-									<a href="#program">
+									<a href="#program" class="toId">
 										<span>Программа</span>
 									</a>
 								</li>
 								<li>
-									<a href="#forwhom">
+									<a href="#forwhom" class="toId">
 										<span>Для кого</span>
 									</a>
 								</li>
 								<li>
-									<a href="#popup" class="with-popup">
+									<a href="#popup" class="with-popup toId">
 										<span>Принять участие</span>
 									</a>
 								</li>

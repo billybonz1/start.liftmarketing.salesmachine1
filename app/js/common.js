@@ -1,5 +1,3 @@
 $(function() {
-
-	// Custom JS
-
+    $(".toId").mPageScroll2id();
 });

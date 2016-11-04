@@ -35,6 +35,12 @@ header{
       &.with-popup{
         border: 2px solid $color;
         transform: skewX(-15deg);
+        &:hover,&:focus{
+          background-color: $color;
+          color: white;
+          text-decoration: none;
+          transition: .4s;
+        }
         span{
           transform: skewX(15deg);
           display: block;
@@ -113,7 +119,7 @@ header{
       }
     }
     @media(max-width: 633px){
-      line-height: 20px;
+      line-height: 10vw;
       b{
         font-size: 3vw;
       }
@@ -246,11 +252,6 @@ header{
   .moonray-form-input-type-submit{
     display: inline-block;
   }
-  .opf-error__icon{
-    transform: skewX(17deg);
-    left: auto !important;
-    right: 8px !important;
-  }
   @media(max-width: 988px){
     width: 280px;
     text-align: center;
@@ -265,7 +266,13 @@ header{
     margin-right: auto;
   }
 }
-
+.moonray-form-element-wrapper-alignment-left{
+  .opf-error__icon{
+    transform: skewX(17deg);
+    left: auto !important;
+    right: 8px !important;
+  }
+}
 .submit-button{
   color: #ffffff;
   background-color: #e42a1f;
@@ -275,6 +282,13 @@ header{
   transform: skewX(-17deg);
   padding: 9px 36px;
   margin-left: 2px;
+  &:hover,&:focus,&:active{
+    background-color: darken($color, 5);
+    outline: none;
+    transition: .4s;
+    color: #fff;
+    text-decoration: none;
+  }
   span{
     transform: skewX(17deg);
     display: block;

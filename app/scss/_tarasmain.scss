@@ -109,7 +109,7 @@
       padding: 0px 20px;
     }
   }
-  button{
+  a{
     margin-left: 90px;
     margin-top: 30px;
   }
@@ -165,6 +165,22 @@
   top: -47px;
   left: 33px;
 }
+.border-item4{
+  position: absolute;
+  border-right: 2px solid #dbdbdb;
+  width: 2px;
+  height: 123px;
+  top: -121px;
+  left: 39px;
+}
+.border-item5{
+  position: absolute;
+  border-right: 2px solid #dbdbdb;
+  width: 2px;
+  height: 147px;
+  top: -146px;
+  left: 34px;
+}
 .circle{
   position: absolute;
   background-color: $color;
@@ -188,7 +204,7 @@
     h2{
       font-size: 20px;
     }
-    button{
+    a{
       margin: 0;
     }
   }
@@ -203,6 +219,9 @@
       padding: 40px 0;
       font-size: 15px;
     }
+  }
+  .border-item5,.border-item4,.border-item3,.border-item2,.border-item1,.border-item{
+    display: none;
   }
 }
 @media only screen and (max-width : 800px){
