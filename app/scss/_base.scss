@@ -1,0 +1,28 @@
+@import "bourbon";
+@import "vars";
+
+body{
+  font-family: "ProximaNova";
+  font-size: 18px;
+  color: $color-text;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.inner{
+  max-width: 1030px;
+  margin: 0 auto;
+}
+h1{
+  padding: 0;
+  margin: 0;
+  font-size: 140px;
+}
+h2{
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  padding-top: 37px;
+}
+ul{
+  list-style: none;
+}

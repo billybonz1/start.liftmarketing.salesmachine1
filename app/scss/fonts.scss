@@ -1,0 +1,6 @@
+@import "bourbon";
+
+@include font-face("ProximaNova", "../fonts/ProximaNovaRegular/Proxima Nova Regular", 400, $file-formats: eot woff ttf svg);
+@include font-face("ProximaNova", "../fonts/ProximaNovaBold/Proxima Nova Bold", 700, $file-formats: eot woff ttf svg);
+@include font-face("ProximaNova", "../fonts/ProximaNovaLight/Proxima Nova Light", 300, $file-formats: eot woff ttf svg);
+@include font-face("ProximaNova", "../fonts/ProximaNovaBlack/Proxima Nova Black", 900, $file-formats: eot woff ttf svg);

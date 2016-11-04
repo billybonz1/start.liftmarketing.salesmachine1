@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Bootstrap (latest) Grid Styles Only -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table !important}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table !important}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table !important}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table !important}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table !important}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>@@include('header.min.css')</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="header.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<header>
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="fix">
+						<div class="col-md-6 md-left-pix">
+							<a href="" class="logo">
+								<img src="img/logo.png">
+							</a>
+						</div>
+						<div class="col-md-6 md-right-pix">
+							<ul class="top-menu">
+								<li>
+									<a href="#speakers">
+										<span>Спикеры</span>
+									</a>
+								</li>
+								<li>
+									<a href="#program">
+										<span>Программа</span>
+									</a>
+								</li>
+								<li>
+									<a href="#forwhom">
+										<span>Для кого</span>
+									</a>
+								</li>
+								<li>
+									<a href="#popup" class="with-popup">
+										<span>Принять участие</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row twoGuys">
+					<div class="col-md-12">
+						<div class="head-info">
+							<h1><b>the</b><br>machine</h1>
+							<h2>Пошаговый план увеличения эффективности технологии продаж<br> и отдела продаж для B2B и B2C бизнеса
+							</h2>
+							<div class="head-inf">
+								<div class="border-band"></div>
+								<div class="text-inf">
+									<p>
+										Тренинг-практикум от <b>Андрея Полищука</b> и <b>Владислава Ле</b><br> 										для
+										предпринимателей
+										и 
+										собственников
+										бизнеса
+									</p>
+								</div>
+							</div>
+							<div class="head-form">
+								<div class="moonray-form-p2c80476f190 ussr">
+									<div class="moonray-form moonray-form-label-pos-stacked">
+										<form class="moonray-form-clearfix" action="https://forms.ontraport.com/v2.4/form_processor.php?"
+											  method="post" accept-charset="UTF-8">
+											<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-text">
+												<label for="mr-field-element-249110145727" class="moonray-form-label"></label><input
+													name="firstname" required type="text" class="moonray-form-input"
+													id="mr-field-element-249110145727" placeholder="Ваше имя"/></div>
+											<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-tel">
+												<label for="mr-field-element-358737003291" class="moonray-form-label"></label><input name="sms_number" required type="tel" class="moonray-form-input"
+																																	 id="mr-field-element-358737003291"  placeholder="Ваш телефон"/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-email">
+												<label for="mr-field-element-747021684655" class="moonray-form-label"></label>
+												<input name="email" type="email" class="moonray-form-input" id="mr-field-element-747021684655" required value="" placeholder="Ваш email"/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-center moonray-form-input-type-submit">
+												<button type="submit" name="submit-button" class="submit-button moonray-form-input"
+														id="mr-field-element-805401784135" src
+														data-lastDisplayVal="&ETH;�&ETH;&deg;&ETH;&plusmn;&Ntilde;�&ETH;&frac34;&ETH;&frac12;&ETH;&cedil;&Ntilde;�&ETH;&frac34;&ETH;&sup2;&ETH;&deg;&Ntilde;�&Ntilde;� &ETH;&frac14;&ETH;&micro;&Ntilde;�&Ntilde;�&ETH;&frac34; &ETH;&frac12;&ETH;&deg; &Ntilde;�&ETH;&micro;&ETH;&frac14;&ETH;&cedil;&ETH;&frac12;&ETH;&deg;&Ntilde;�-&ETH;&iquest;&Ntilde;�&ETH;&deg;&ETH;&ordm;&Ntilde;�&ETH;&cedil;&ETH;&ordm;&Ntilde;�&ETH;&frac14;">
+													<span>Улучшить отдел продаж</span>
+												</button>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="afft_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="aff_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="sess_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="ref_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="own_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="oprid" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="contact_id" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_source" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_medium" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_term" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_content" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_campaign" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="referral_page" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="uid" type="hidden" value="p2c80476f190"/>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="head-more-info">
+								<img src="img/arrow.svg">
+								<p>Узнать больше</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="Lift-content">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="content-i content-i-bgs">
+							<div class="border-band border-band-i"></div>
+							<div class="text-inf">
+								<h2>Чем успешные компании<br> отличаются от неуспешных?
+								</h2>
+							</div>
+							<div class="ops-text">
+								<p>Только <b>одним</b>.<br>
+									Успешные компании умеют<br> продавать, а неуспешные - нет. </p>
+								<p>Даже если Вы посмотрите<br>
+									на крутые международные<br> корпорации, то за веселостью,<br> миссией, офисом с качелями<br> и горками для сотрудников… </p>
+								<p>За всем этим стоит мощнейшая<br> система продаж.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="client-message client-message-bg1">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="client-center">
+							<div class="client-zag">
+								<div class="border-band border-band-client"></div>
+								<div class="text-inf text-inf-client"><h2>Ребята мастера своего дела!</h2></div>
+							</div>
+							<div class="client-text">
+								<p>Итак, хочу порекомендовать двух замечательных профессионалов! Это мастера нового поколения, они выросли<br>
+									в интернете, они в нем живут и они мне очень помогли в запуске одной из моих программ, у них есть технологии общения с новым поколением, которое живет в интернете, покупает в интернете. </p>
+								<p>Поэтому, если у вас есть серъезный, важный проект, я рекомендую работать с ними,<br>
+									потому что они – мастера своего дела, они дорожат своей репутацией.</p>
+							</div>
+							<div class="client-nick">
+								<img src="img/otz1.png">
+								<div class="cl-name">
+									<h3>Ицхак Пинтосевич</h3>
+									<p>Эксперт в Системном развитии Личности, автор бестселлера «Действуй!», <a href="#">pintosevich.com</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="can-sell">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="pull-right pull-none">
+							<div class="border-band border-band-i border-band-s"></div>
+							<div class="text-inf text-inf-s">
+								<h2>Только если вы по-настоящему<br>
+									умеете продавать - вы можете<br>
+									позволить себе все это:
+								</h2>
+							</div>
+							<div class="scope">
+								<div class="scope-free">
+									<div class="red-line"></div>
+									<p>Вы много платите сотрудникам</p>
+								</div>
+								<div class="scope-free">
+									<div class="red-line"></div>
+									<p>Много зарабатываете сами</p>
+								</div>
+								<div class="scope-free">
+									<div class="red-line"></div>
+									<p>Устраиваете корпоративы для всей<br>команды за границей</p>
+								</div>
+								<div class="scope-free">
+									<div class="red-line"></div>
+									<p>Выходите на рынки других стран и<br> инвестируете в большие проекты</p>
+								</div>
+								<div class="scope-free">
+									<div class="red-line"></div>
+									<p>Привлекаете в компанию лучших сотрудников<br> и платите им большие зарплаты</p>
+								</div>
+								<div class="scope-free">
+									<div class="red-line"></div>
+									<p>И много-много всего другого...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="info-problems">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>Мы знакомы с основными проблемами<br>
+								собственника бизнеса не понаслышке:
+							</h2>
+						</div>
+						<div class="all-pr">
+							<div class="item-problems">
+								<img src="img/problem1.png">
+								<p>На рынке труда полная<br> з*дница с кадрами и<br> персоналом</p>
+							</div>
+							<div class="item-problems">
+								<img src="img/problem2.png">
+								<p>Низкая дисциплина<br>и отсутствие контроля<br> показателей</p>
+							</div>
+							<div class="item-problems">
+								<img src="img/problem3.png">
+								<p>Нет системы -<br>не понятно что<br>и за чем делать
+								</p>
+							</div>
+							<div class="item-problems">
+								<img src="img/problem4.png">
+								<p>Менеджеры не умеют<br> продавать - результат<br> того, что нет программы<br> адаптации
+								</p>
+							</div>
+							<div class="item-problems">
+								<img src="img/problem5.png">
+								<p>У менеджеров мало<br> мотивации работать
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="client-message client-message-bg2">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="client-center">
+							<div class="client-zag">
+								<div class="border-band border-band-client"></div>
+								<div class="text-inf text-inf-client"><h2>Благодаря Liftmarketing мы стали полноценной компанией
+
+								</h2></div>
+							</div>
+							<div class="client-text">
+								<p>Я понял, что маркетолог должен заниматься маркетингом. Что один ты не можешь все. Какбы оно в твоей голове<br> есть, проще посоветоваться со специалистом, проконсультироватся, но сам все не успеешь.</p>
+								<p>По любому на фирме должен быть отдел продаж. Без него никак вообще. Они научили, как это сделать правильно,<br> как его там образовать. Что должен быть маркетолог и остальные менеджеры, которые выполняют свои функции.</p>
+								<p>То есть, благодаря LiftMarketing мы стали полноценной компанией со своими сильными сторонами</p>
+							</div>
+							<div class="client-nick">
+								<img src="img/otz2.png">
+								<div class="cl-name">
+									<h3>Денис Успенский</h3>
+									<p>основатель компании Dizaap <a href="#">dizaap.com</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="can-sell can-sell-i">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="pull-right right-m pull-none">
+							<div class="border-band border-band-i border-band-s"></div>
+							<div class="text-inf text-inf-s">
+								<h2>В свое время мы инвестировали<br>
+									в создание своего отдела продаж<br> более 60,000$
+								</h2>
+							</div>
+							<div class="scope">
+								<div class="scope-free">
+									<div class="red-line"></div>
+									<p>Мы привлекали специалистов и внешних<br> консультантов</p>
+								</div>
+								<div class="scope-free">
+									<div class="red-line"></div>
+									<p>Мы привозили экспертов продаж и<br> организовывали тренинги для сотрудников<br> нашей компании</p>
+								</div>
+								<div class="scope-free">
+									<div class="red-line"></div>
+									<p>Мы лично обучались у ТОП-вых<br> представителей в теме продаж в США и СНГ</p>
+								</div>
+							</div>
+							<p>Большая часть из них лишь в теории объясняли, как<br> должен работать мощный отдел продаж. </p>
+							<p>В результате мы собрали лучшие знания из каждого<br> источника и сформировали МАШИНУ, которая приносит<br> нам стабильный поток продаж.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sellsystem">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>
+								Для кого подходит система продаж,<br>
+								которой мы обучаем:
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="sellsystem__left">
+						<div class="sellsystem__left__item sellsystem__left__item_mod">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh1.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Интернет-магазины
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh2.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Тренинговый бизнес
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh3.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Юридические услуги
+
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh4.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Строительные компании
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh5.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Продюсирование<br>
+									экспертов
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh6.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Продажа услуг через интернет
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="sellsystem__right">
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh7.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Тур.агенства
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh8.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Продажа обучение<br>
+									и консалтинга
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh9.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Продажа автомобилей<br>
+									и предметов роскоши
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh10.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Инфобизнес
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh11.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									IT-сфера
+								</p>
+							</div>
+						</div>
+						<div class="sellsystem__left__item">
+							<div class="sellsystem__left__item-left">
+								<a href="#">
+									<img src="img/forwh12.png" alt="">
+								</a>
+							</div>
+							<div class="sellsystem__left__item-right">
+								<p>
+									Салоны и студии красоты
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="client-message client-message-bg3">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="client-center">
+							<div class="client-zag">
+								<div class="border-band border-band-client"></div>
+								<div class="text-inf text-inf-client"><h2>Как девушка упаковала свой бизнес и открыла<br>
+									новые возможности для развития
+								</h2></div>
+							</div>
+							<div class="client-w">
+								<div class="client-text">
+									<p>Это хрупкая девушка, Виктория - владелец кафе в Киеве. Пройдя<br> обучение у нас и начав упаковывать свой бизнес, она открыла для<br> себя новую возможность и призвание - обучать других. </p>
+									<p>Теперь у Виктории есть своя коучинг-программа для тех,<br>
+										кто хочет открыть свое кафе.</p>
+								</div>
+								<div class="client-nick">
+									<img src="img/otz3.png">
+									<div class="cl-name">
+										<h3>Виктория Рейникова</h3>
+										<p>Владелец «Самого доброго кафе» <a href="#">linkedin.com/in/artemsedov</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="client-video">
+								<img src="img/youtube-video-ui.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="realise">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>
+								Как мы реализовали машину продаж в нашей компании:
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="realise__content">
+					<div class="realise__content__item">
+						<div class="border-item"></div>
+						<div class="border-item2"></div>
+						<div class="realise__content__item__left">
+							<img src="img/how1.png" alt="">
+							<div class="circle">1</div>
+						</div>
+						<div class="realise__content__item__right">
+							<p>
+								Мы создали систему найма персонала,<br>
+								с помощью которой мы отбираем<br>
+								лучших из лучших
+							</p>
+						</div>
+					</div>
+					<div class="realise__content__item">
+						<div class="border-item2"></div>
+						<div class="realise__content__item__left">
+							<img src="img/how2.png" alt="">
+							<div class="circle">2</div>
+						</div>
+						<div class="realise__content__item__right">
+							<p>
+								Выстроили систему обучения и адаптации<br>
+								для нашей команды, с помощью которой мы<br>
+								воспитываем sales-менеджеров абсолютно<br>
+								с нуля и без дополнительных специалистов
+							</p>
+						</div>
+					</div>
+					<div class="realise__content__item">
+						<div class="border-item"></div>
+						<div class="border-item3"></div>
+						<div class="realise__content__item__left">
+							<img src="img/how3.png" alt="">
+							<div class="circle">4</div>
+						</div>
+						<div class="realise__content__item__right">
+							<p>
+								Выстроили входящий поток заявок с<br>
+								помощью интернет для того, чтобы наши<br>
+								менеджеры по продажам смогли<br>
+								обрабатывать исключительно теплые<br>
+								заявки и увеличили конверсию в продажу
+							</p>
+						</div>
+					</div>
+					<div class="realise__content__item">
+						<div class="border-item3"></div>
+						<div class="realise__content__item__left">
+							<img src="img/how4.png" alt="">
+							<div class="circle">3</div>
+						</div>
+						<div class="realise__content__item__right">
+							<p>
+								Внедрили прозрачную систему управления<br>
+								sales-менеджера, внедрили CRM-систему и<br>
+								другие системы аналитики, позволяющие<br>
+								отслеживать эффективность каждого<br>
+								рекламного канала и сотрудника
+							</p>
+						</div>
+					</div>
+					<div class="realise__content__item">
+						<div class="realise__content__item__left">
+							<img src="img/how5.png" alt="">
+							<div class="circle">5</div>
+						</div>
+						<div class="realise__content__item__right">
+							<p>
+								Внедрили правильные ценности и систему<br>
+								мотивации для команды, позволяющую<br>
+								формировать сплоченный dream-team<br>
+								лидеров продаж
+							</p>
+						</div>
+					</div>
+					<div class="realise__content__item">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>
+								Хотите узнать пошаговый<br>
+								план в деталях?
+							</h2>
+						</div>
+						<button type="submit" name="submit-button" class="submit-button moonray-form-input"
+								id="mr-field-element-805401784135" src
+								data-lastDisplayVal="&ETH;�&ETH;&deg;&ETH;&plusmn;&Ntilde;�&ETH;&frac34;&ETH;&frac12;&ETH;&cedil;&Ntilde;�&ETH;&frac34;&ETH;&sup2;&ETH;&deg;&Ntilde;�&Ntilde;� &ETH;&frac14;&ETH;&micro;&Ntilde;�&Ntilde;�&ETH;&frac34; &ETH;&frac12;&ETH;&deg; &Ntilde;�&ETH;&micro;&ETH;&frac14;&ETH;&cedil;&ETH;&frac12;&ETH;&deg;&Ntilde;�-&ETH;&iquest;&Ntilde;�&ETH;&deg;&ETH;&ordm;&Ntilde;�&ETH;&cedil;&ETH;&ordm;&Ntilde;�&ETH;&frac14;">
+							<span>Регистрируйтесь на практикум</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="core">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>
+								Три ключевые задачи, в которых вы получите<br>
+								кристальное видение после тренинга:
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="core__content">
+					<div class="core__content__item">
+						<div class="core__content__item___img">
+							<img src="img/task1.png" alt="">
+						</div>
+						<p>
+							Как научиться создавать<br>
+							входящий поток теплых<br>
+							клиентов и не звонить<br>
+							в «холодную»
+						</p>
+					</div>
+					<div class="core__content__item">
+						<div class="core__content__item___img">
+							<img src="img/task2.png" alt="">
+						</div>
+						<p>
+							Как научиться создавать<br>
+							входящий поток теплых<br>
+							клиентов и не звонить<br>
+							в «холодную»
+						</p>
+					</div>
+					<div class="core__content__item">
+						<div class="core__content__item___img">
+							<img src="img/task3.png" alt="">
+						</div>
+						<p>
+							Как научиться создавать<br>
+							входящий поток теплых<br>
+							клиентов и не звонить<br>
+							в «холодную»
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="client-message client-message-bg4">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="client-center">
+							<div class="client-zag">
+								<div class="border-band border-band-client"></div>
+								<div class="text-inf text-inf-client"><h2>За последний месяц увеличили продажи
+								</h2></div>
+							</div>
+							<div class="client-text">
+									<p>Спасибо за мудрые вопросы и за то что показал кухню изнутри. Спасибо за критику. В результаты нашего<br> знакомства я не только стал планировать и действовать, но еще стал строить систему. </p>
+									<p>Итак: Благодаря правильному планированию: мы за последний месяц (кстати это совсем не сезон по данному<br> бизнесу) сделали намного больше продаж. Благодаря внедрению системы, создали отдел продаж в течение 10<br> дней (взяли только новичков), который сразу же начал работать по инструкциям и регламентам. </p>
+									<p>И кроме продаж самое ценное то, что все знают теперь, чем должны заниматься. Всем бы такое окружение.</p>
+								</div>
+							<div class="client-nick">
+									<img src="img/otz4.png">
+									<div class="cl-name">
+										<h3>Бабак Айвази</h3>
+										<p>Владелец туристического агентства Prada Travel и компании CRMtronic <a href="#">.facebook.com/babak.adli</a></p>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="questions-for">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>Какие вопросы для вашего бизнеса<br>
+								будут рассмотрены в течении практикума:
+							</h2>
+						</div>
+						<div class="module-all">
+							<div class="item-module">
+								<p>Модуль #1 <b>Создание входящего потока</b></p>
+								<ul>
+									<li>Как перестать звонить в «Холодную»</li>
+									<li>Как создать воронку продаж из «теплых» клиентов</li>
+									<li>Бизнес-модель доминирования над конкурентами</li>
+									<li>Этапность создания отдела продаж</li>
+									<li>Ключевые этапы продаж и инструменты продаж</li>
+									<li>Маркетинговая модель, которую используют не<br> более 1% всех предпринимателей в СНГ</li>
+									<li>Отличия в создании отдела продаж в B2B и B2C</li>
+								</ul>
+							</div>
+							<div class="item-module">
+								<p>Модуль #2 <b>Подготовка к продажам</b></p>
+								<ul>
+									<li>Продаем боль клиента</li>
+									<li>Как мотивировать клиента оплатить уже сегодня</li>
+									<li>Как оставить клиента еще “голодным”</li>
+									<li>Откуда берутся возражения и что с этим делать</li>
+									<li>Таблица возражений, как ключевой инструмент<br> менеджера по продажам</li>
+									<li>Отработка самых популярных возражений</li>
+								</ul>
+							</div>
+							<div class="item-module">
+								<p>Модуль #3 <b>Система найма лучших из лучших.<br> Инструменты управления продажами</b></p>
+								<ul>
+									<li>Как повлияло поколение Y на систему найма<br>
+										и продаж</li>
+									<li>Система конкурсов и найма персонала</li>
+									<li>Виды и типы CRM. Внедрение CRM-системы</li>
+									<li>Подготовка телефонных программ и программ<br> набора номера</li>
+									<li>Система отчетности в отделе продаж</li>
+								</ul>
+							</div>
+							<div class="item-module">
+								<p>Модуль #4 <b>Контроль продаж и ключевые показатели.<br> Система обучения и мотивации</b></p>
+								<ul>
+									<li>Какие показатели мы считаем</li>
+									<li>Как понять, эффективен менеджер или нет</li>
+									<li>Почему деньги - это не критерий качества<br> продажника</li>
+									<li>Создание таблицы статистики</li>
+									<li>Обучение менеджеров по продажам</li>
+									<li>Какой должна быть система обучения продажников</li>
+									<li>Над чем нужно работать постоянно</li>
+									<li>Как поддерживать тонус в отделе продаж<br> ежедневно</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="client-message client-message-bg5">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="client-center">
+							<div class="client-zag">
+								<div class="border-band border-band-client"></div>
+								<div class="text-inf text-inf-client"><h2>Мы увеличили свою прибыль
+								</h2></div>
+							</div>
+							<div class="client-text">
+								<p>Представьте себе задачу, состоящую из 3-х ключевых пунктов: построить систему продажи с нуля, обучить<br> персонал и создать систему быстрых продаж используя самые современные методы и технологии, причём<br> письменно гарантировав определённый объём денег. </p>
+								<p>Как же справились они с этой задачей? На отлично! </p>
+								<p>В итоге за 10 дней был достигнут этот результат, а прибыль удвоена была от той, которая была гарантирована,<br> поэтому я с удовольствием могу не только их рекомендовать, а выбираю их себе в партнёры в следующий проект<br> "Рекорд Гиннеса мира" и знаю, что ребята могут сделать все таким образом, что мы получим гарантированный и<br> измеряемый результат. Поэтому если вы занимаетесь бизнесом и хотите построить комплексно всю систему с<br> гарантированным результатом, они могут вам в этом помочь, как эксперты.</p>
+							</div>
+							<div class="client-nick">
+								<img src="img/otz5.png">
+								<div class="cl-name">
+									<h3>Андрей Сподин</h3>
+									<p>Владелец международной компании <a href="#">Inten .inten.ua</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="book">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf text-inf_color">
+							<h2>Забронируйте свое<br>
+								участие в мероприятии
+							</h2>
+						</div>
+						<h3><b>Пакет</b> Собственник</h3>
+						<ul class="ll-list">
+							<li>Участие в полных 2-х днях интенсива</li>
+							<li>Дополнительные раздаточные материалы</li>
+							<li>Аудит одного скрипта разговора для<br> вашей компании нашим главным коучем<br> отдела продаж</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<form>
+							<img src="img/line.png">
+							<p>Оставьте свои данные ниже, чтобы<br>забронировать раннюю цену на воркшоп!</p>
+							<input type="text" placeholder="Ваше имя...">
+							<input type="text" placeholder="Ваш email">
+							<input type="text" placeholder="Ваш номер телефона">
+							<button class="submit-button">Регистрируйтесь на практикум</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="practicum">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>
+								Как будет проходить интенсив-практикум:
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="core__content">
+					<div class="core__content__item">
+						<div class="core__content__item___img">
+							<img src="img/pass1.png" alt="">
+						</div>
+						<h3>
+							Длительность и<br>
+							регламент
+						</h3>
+						<p>
+							16-17 Июля. Два полных дня.<br>
+							Суббота и воскресенье.<br>
+							С 10.00 по 18.00
+						</p>
+					</div>
+					<div class="core__content__item">
+						<div class="core__content__item___img">
+							<img src="img/pass2.png" alt="">
+						</div>
+						<h3>
+							Место<br>
+							проведения
+						</h3>
+						<p>
+							г. Киев, зал уточняется<br>
+							Онлайн трансляция<br>
+							по всему миру
+						</p>
+					</div>
+					<div class="core__content__item">
+						<div class="core__content__item___img">
+							<img src="img/pass3.png" alt="">
+						</div>
+						<h3>
+							Формат<br>
+							мероприятия
+						</h3>
+						<p>
+							Практикум-интенсив с<br>
+							практическими рекомендациями<br>
+							и заданиями
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="client-message client-message-bg6">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="client-center">
+							<div class="client-zag">
+								<div class="border-band border-band-client"></div>
+								<div class="text-inf text-inf-client"><h2>Я процентов 20-30 клиентов не успеваю даже обрабатывать
+								</h2>
+								</div>
+							</div>
+							<div class="client-text">
+								<p>Моя эффективность сейчас увеличилась в разы! Поток клиентов - в разы!</p>
+								<p>Сегодня разговаривал и с Владом, с Андреем, сказал: “Ребята, я процентов 20-30 клиентов не успеваю даже обрабатывать”.
+								</p>
+								<p>Результаты феноменальны, то есть это цифры с пятью-шестью нулями.</p>
+								<p>Поэтому, если у кого-то есть желание чему-то научиться, структурировать и развивать свой бизнес по-новому, находить новых клиентов, тестить, естественно надо идти к ребятам, то есть учиться и тренироваться</p>
+							</div>
+							<div class="client-nick">
+								<img src="img/otz6.png">
+								<div class="cl-name">
+									<h3>Андрей Половко</h3>
+									<p>Владелец компании Lux Prestige<a href="#">facebook.com/profile.php?id=100007948930084</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lasty">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>
+								За прошлый год в нашей компании
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="lasty__content">
+					<div class="lasty__content___item">
+						<div class="lasty__content___item__left">
+							<img src="img/achieve1.png" alt="">
+						</div>
+						<div class="lasty__content___item__right">
+							<p>
+								Сделали разговоров по телефону
+							</p>
+						</div>
+					</div>
+					<div class="lasty__content___item">
+						<div class="lasty__content___item__left">
+							<img src="img/achieve2.png" alt="">
+						</div>
+						<div class="lasty__content___item__right">
+							<p>
+								Человек взяли в команду
+							</p>
+						</div>
+					</div>
+					<div class="lasty__content___item">
+						<div class="lasty__content___item__left">
+							<img src="img/achieve3.png" alt="">
+						</div>
+						<div class="lasty__content___item__right">
+							<p>
+								Получили клиентов
+							</p>
+						</div>
+					</div>
+					<div class="lasty__content___item">
+						<div class="lasty__content___item__left">
+							<img src="img/achieve4.png" alt="">
+						</div>
+						<div class="lasty__content___item__right">
+							<p>
+								Проведено групповых<br>
+								конкурс-собеседований
+							</p>
+						</div>
+					</div>
+					<div class="lasty__content___item">
+						<div class="lasty__content___item__left">
+							<img src="img/achieve5.png" alt="">
+						</div>
+						<div class="lasty__content___item__right">
+							<p>
+								Отсмотрено кандидатов
+							</p>
+						</div>
+					</div>
+					<div class="lasty__content___item">
+						<div class="lasty__content___item__left">
+							<img src="img/achieve6.png" alt="">
+						</div>
+						<div class="lasty__content___item__right">
+							<p>
+								Оставили в команде
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="company">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>
+								Как будет проходить интенсив-практикум:
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row pad-row">
+					<div class="col-md-6">
+						<img src="img/youtube-video-ui1.png">
+					</div>
+					<div class="col-md-6">
+						<ul class="ll-list">
+							<li>Более 30 человек в команде и штате</li>
+							<li>Мы инвестировали в рекламу своих проектов более 315,000$ собственных средств</li>
+							<li>Каждый год мы инвестируем в свое обучение более<br> 72,000$ и обучаемся в ТОП-ых программах для<br> предпринимателей в США</li>
+							<li>Создали более 230 посадочных страниц и сайтов для<br> собственных проектов и бизнесов наших клиентов</li>
+							<li>Страны, в которых мы проводим обучение:<br>
+								США, Россия, Беларусь, Казахстан, Молдова</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="client-message client-message-bg7">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="client-center">
+							<div class="client-zag">
+								<div class="border-band border-band-client"></div>
+								<div class="text-inf text-inf-client"><h2>Провели вебинары и запустили обучение - на сумму 667 500 рублей
+								</h2>
+								</div>
+							</div>
+							<div class="client-text">
+								<p>На коучинг пришла как эксперт, планировала продюсировать экспертов в детско-родительской теме. Во время коучинга пришлось быстро менять направление, поскольку познакомилась с хорошим экспертом.
+								</p>
+								<p>Где-то в середине коучинга организовали с ним онлайн-тренинг и продали на 24 000+ тыс рублей. Сразу по окончанию коучинга пришло предложение организовать в онлайне обучение эксперта по эзотерической теме.
+								</p>
+								<p>В итоге мы собрали базу интересантов - около 300 человек. Провели вебинары и запустили обучение - на сумму 667 500 рублей. Заняло все это 1,5 месяца - и все это в период НГ праздников.</p>
+								<p>Сейчас заканчиваем мой третий запуск уже по детско-родительской теме. Получили заявок на 115 000 рублей.</p>
+							</div>
+							<div class="client-nick">
+								<img src="img/otz7.png">
+								<div class="cl-name">
+									<h3>Светлана Кожуховская</h3>
+									<p>Владелец компании PsyШкольник  <a href="#">psyshkolnik.com</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="partners">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>
+								Наши тренинги и мероприятия<br>
+								посещают сотрудники компаний:
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="partners__content">
+					<img src="img/companies.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="partners">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row marg-top">
+					<div class="col-md-12">
+						<div class="border-band border-band-i"></div>
+						<div class="text-inf">
+							<h2>
+								Если вы не знакомы с нами, то<br>
+								вот несколько слов обо мне и моем партнере:
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row marg-top">
+					<div class="col-md-4">
+						<div class="foto-man">
+							<img src="img/vladle.png">
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3>Владислав Ле</h3>
+						<ul>
+							<li><div class="number">01.</div>Опытнейший интернет-маркетолог, который буквально<br>
+								посвятил себя этому направлению</li>
+							<li><div class="number">02.</div>$ 1,5 млн - крупнейший освоенный бюджет на рекламные компании</li>
+							<li><div class="number">03.</div>Совладелец и директор компании LiftMarketing</li>
+							<li><div class="number">04.</div>Соавтор книги-бестселлера «От идеи до прибыли»</li>
+							<li><div class="number">05.</div>Соучредитель и директор по маркетингу консалтинговой<br>
+								группы NOBLE’s</li>
+							<li><div class="number">06.</div>Лицензированный член Американской Ассоциации Маркетинга (AMA)</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row marg-top">
+					<div class="col-md-8">
+						<h3>Андрей Полищук</h3>
+						<ul>
+							<li><div class="number">01.</div>За последние 2 года под его руководством в отделе продаж<br>
+								было реализовано сделок на сумму более 2 млн. долл. США</li>
+							<li><div class="number type-4">02.</div>Андрей начинал с организации бизнес-тренингов в Украине,<br>
+								приглашая в Киев лучших экспертов из всего СНГ. За 8 лет<br>
+								организовал более 200 мероприятий, которые посетило<br>
+								более 15 000 человек</li>
+							<li><div class="number type-3">03.</div>Андрей работал с такими известными тренерами, как Радислав<br>
+								Гандапас, Глеб Архангельский, Дамир Халилов, Константин Бакшт,<br>
+								Ицхак Пинтосевич, Бабак Айвази, Аллан Пиз и многие другие</li>
+							<li><div class="number type-3">04.</div>В данный момент под его наставничеством создают отделы<br>
+								продаж более 55 собственников бизнесов и ТОП-менеджеров
+								крупных компаний</li>
+							<li><div class="number">05.</div>Среди его учителей и наставников в продажах Джордан Белфорд,<br>
+								Брайан Трейси, Тони Роббинс, Ицхак Адизес и другие мировые гуру</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<div class="foto-man">
+							<img src="img/andreypolischuk.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="in-landing">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row twoGuys">
+					<div class="col-md-12">
+						<div class="head-info">
+							<h1><b>the</b><br>machine</h1>
+							<div class="head-inf">
+								<div class="border-band"></div>
+								<div class="text-inf">
+									<p>
+										Тренинг-практикум от <b>Андрея Полищука</b> и <b>Владислава Ле</b><br> 										для
+										предпринимателей
+										и 
+										собственников
+										бизнеса
+									</p>
+								</div>
+							</div>
+							<div class="head-form">
+								<div class="moonray-form-p2c80476f190 ussr">
+									<div class="moonray-form moonray-form-label-pos-stacked">
+										<form class="moonray-form-clearfix" action="https://forms.ontraport.com/v2.4/form_processor.php?"
+											  method="post" accept-charset="UTF-8">
+											<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-text">
+												<label for="mr-field-element-249110145727" class="moonray-form-label"></label><input
+													name="firstname" required type="text" class="moonray-form-input"
+													id="mr-field-element-249110145727" placeholder="Ваше имя"/></div>
+											<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-tel">
+												<label for="mr-field-element-358737003291" class="moonray-form-label"></label><input name="sms_number" required type="tel" class="moonray-form-input"
+																																	 id="mr-field-element-358737003291"  placeholder="Ваш телефон"/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-left moonray-form-input-type-email">
+												<label for="mr-field-element-747021684655" class="moonray-form-label"></label>
+												<input name="email" type="email" class="moonray-form-input" id="mr-field-element-747021684655" required value="" placeholder="Ваш email"/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-element-wrapper-alignment-center moonray-form-input-type-submit">
+												<button type="submit" name="submit-button" class="submit-button moonray-form-input"
+														id="mr-field-element-805401784135" src
+														data-lastDisplayVal="&ETH;�&ETH;&deg;&ETH;&plusmn;&Ntilde;�&ETH;&frac34;&ETH;&frac12;&ETH;&cedil;&Ntilde;�&ETH;&frac34;&ETH;&sup2;&ETH;&deg;&Ntilde;�&Ntilde;� &ETH;&frac14;&ETH;&micro;&Ntilde;�&Ntilde;�&ETH;&frac34; &ETH;&frac12;&ETH;&deg; &Ntilde;�&ETH;&micro;&ETH;&frac14;&ETH;&cedil;&ETH;&frac12;&ETH;&deg;&Ntilde;�-&ETH;&iquest;&Ntilde;�&ETH;&deg;&ETH;&ordm;&Ntilde;�&ETH;&cedil;&ETH;&ordm;&Ntilde;�&ETH;&frac14;">
+													<span>Улучшить отдел продаж</span>
+												</button>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="afft_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="aff_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="sess_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="ref_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="own_" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="oprid" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="contact_id" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_source" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_medium" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_term" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_content" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="utm_campaign" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="referral_page" type="hidden" value=""/>
+											</div>
+											<div class="moonray-form-element-wrapper moonray-form-input-type-hidden">
+												<input name="uid" type="hidden" value="p2c80476f190"/>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<header class="footer">
+		<div class="inner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="fix">
+						<div class="col-md-6 md-left-pix">
+							<a href="" class="logo">
+								<img src="img/footer-logo.png">
+							</a>
+						</div>
+						<div class="col-md-6 md-right-pix">
+							<ul class="top-menu">
+								<li>
+									<a href="#speakers">
+										<span>Спикеры</span>
+									</a>
+								</li>
+								<li>
+									<a href="#program">
+										<span>Программа</span>
+									</a>
+								</li>
+								<li>
+									<a href="#forwhom">
+										<span>Для кого</span>
+									</a>
+								</li>
+								<li>
+									<a href="#popup" class="with-popup">
+										<span>Принять участие</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--<div class="pixel-pf">
+		<img src="img/machine.jpg">
+	</div>
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS End -->
+	<script type="text/javascript" src="//forms.ontraport.com/v2.4/include/formEditor/genjs-v3.php?html=false&uid=p2c80476f190"></script>
+</body>
+</html>

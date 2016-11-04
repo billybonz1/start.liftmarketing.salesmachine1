@@ -1,0 +1,357 @@
+@import "bourbon";
+@import "vars";
+@import "libs";
+
+//Custom styles here
+.content-i-bgs{
+  background-image: url("../img/2block-bg.png");
+  background-repeat: no-repeat;
+  background-position: 484px 97px;
+
+}
+.border-band-i{
+  margin: 92px 0 0 27px;
+}
+.ops-text{
+  *:first-child{
+    padding-top: 15px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+  }
+  *:nth-child(2){
+    padding-top: 7px;
+    letter-spacing: 0.1px;
+    line-height: 28px;
+  }
+  *:last-child{
+    padding-top: 8px;
+    padding-bottom: 143px;
+  }
+  p{
+    font-size: 24px;
+    line-height: 25px;
+    padding-left: 15px;
+  }
+}
+
+.client-center{
+  max-width: 970px;
+  margin: auto;
+}
+.client-message{
+  position: relative;
+  &:after{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background-color: #1a1919;
+    opacity: 0.8;
+    z-index: 1;
+  }
+}
+.client-message-bg1{
+  background-image: url("../img/review.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+.border-band-client{
+  background-color: #6c6966;
+  margin: 110px 0 0 13px;
+
+}
+.text-inf-client{
+
+  h2{
+    color: #e42a1f;
+    font-size: 24px;
+    padding: 96px 14px 0;
+
+  }
+
+}
+.client-center{
+  position: relative;
+  z-index: 2;
+  p{
+    color: #ffffff;
+    padding-top: 5px;
+    line-height: 22px;
+  }
+}
+.client-nick{
+  img{
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+.cl-name{
+  display: inline-block;
+  h3{
+    margin: 0;
+    padding-top: 25px;
+    font-size: 24px;
+    color: #fff;
+    padding-left: 10px;
+    letter-spacing: -0.3px;
+  }
+  p{
+    margin: 0;
+    padding-top: 0px;
+    padding-left: 9px;
+    color: #a09c9a;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    padding-bottom: 97px;
+  }
+}
+.can-sell{
+  background-color: #f8f8f8;
+  background-image: url("../img/4block-bg.png");
+  background-repeat: no-repeat;
+  background-position: 98px 126px;
+}
+.border-band-s{
+  margin: 152px 14px 0 0;
+}
+.text-inf-s{
+  h2{
+    padding-top: 138px;
+    padding-right: 36px;
+    line-height: 30px;
+  }
+}
+.scope{
+  margin-left: 96px;
+  padding-top: 24px;
+}
+.scope-free{
+  p{
+    display: inline-block;
+    padding-top: 5px;
+  }
+}
+.red-line{
+  width: 15px;
+  height: 3px;
+  background-color: $color;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 33px;
+  margin-right: 24px;
+  margin-bottom: 5px;
+}
+
+.all-pr{
+  margin-top: 84px;
+}
+.info-problems{
+  padding-bottom: 57px;
+}
+.item-problems{
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 51px;
+  width: 48%;
+  vertical-align: top;
+  img{
+    display: inline-block;
+    vertical-align: top;
+  }
+  p{
+    display: inline-block;
+    margin: 0;
+    color: $color-text;
+    font-size: 24px;
+    line-height: 26px;
+    padding-left: 23px;
+  }
+}
+.client-message-bg2{
+  background-image: url("../img/review2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.can-sell-i{
+  background-image: url("../img/7block-bg.png");
+  background-position: 99px 118px;
+}
+.right-m{
+  margin-right: -80px;
+  padding-bottom: 25px;
+}
+.client-message-bg3{
+  background-image: url("../img/review3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.client-w{
+  float: left;
+}
+.client-video{
+  display: inline-block;
+  padding-left: 22px;
+  padding-bottom: 25px;
+}
+.client-message-bg4{
+  background-image: url("../img/review4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.client-message-bg5{
+  background-image: url("../img/review5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.client-message-bg6{
+  background-image: url("../img/review6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -407px;
+}
+.client-message-bg7{
+  background-image: url("../img/review7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.module-all{
+  padding-top: 53px;
+  padding-bottom: 25px;
+}
+.item-module{
+  display: inline-block;
+  padding-bottom: 40px;
+  margin-left: 17px;
+  vertical-align: top;
+  width: 48%;
+  p{
+    font-weight: 700;
+    color: $color;
+    b{
+      color: $color-text;
+    }
+  }
+  ul{
+    padding-left: 30px;
+    li{
+      position: relative;
+    }
+    li:before{
+      position: absolute;
+      left: -30px;
+      top: 10px;
+      width: 15px;
+      height: 1px;
+      content: "";
+      background-color: #c6c6c6;
+    }
+  }
+}
+.text-inf_color{
+  h2{
+    color: $color-text;
+  }
+}
+.ll-list{
+  li:before{
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    width: 15px;
+    height: 3px;
+    content: "";
+    background-color: $color;
+  }
+  li{
+    padding-bottom: 15px;
+    position: relative;
+  }
+}
+.book{
+  padding-bottom: 25px;
+  h3{
+    color: $color;
+    font-size: 30px;
+  }
+  b{
+    font-size: 18px;
+    color: $color-text;
+  }
+  form{
+    margin-top: 70px;
+    border: 2px solid #f4f4f4;
+    text-align: center;
+    img{
+      padding-top: 25px;
+      width: 90%;
+    }
+    input{
+      border: none;
+    }
+    input[type='text']{
+      &:focus{
+        outline: none;
+        border-bottom: 1px solid #000;
+      }
+      display: inline-block;
+      color: $color-text;
+      width: 68%;
+      border-bottom: 1px solid #e6e6e6;
+      margin-bottom: 20px;
+    }
+    button{
+      margin-bottom: 20px;
+    }
+  }
+}
+.company{
+  background-color: #f8f8f8;
+  img{
+    margin-top: 25px;
+  }
+}
+.pad-row{
+  margin-top: 40px;
+}
+.foto-man{
+  text-align: center;
+}
+.partners{
+  font-size: 18px;
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    padding-bottom: 15px;
+  }
+}
+.number{
+  float: left;
+  padding-bottom:15px;
+  margin-right: 15px;
+  color: $color;
+}
+.type-4{
+  padding-bottom: 51px;
+}
+.type-3{
+  padding-bottom: 30px;
+}
+.marg-top{
+  margin-top: 15px;
+  margin-bottom: 15px ;
+}
+@import "media";
+@import "tarasmain";
