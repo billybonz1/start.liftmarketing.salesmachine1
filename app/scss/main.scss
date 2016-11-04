@@ -279,6 +279,9 @@
   }
 }
 .book{
+  .book-input{
+    position: relative;
+  }
   padding-bottom: 25px;
   h3{
     color: $color;
@@ -292,14 +295,14 @@
     margin-top: 70px;
     border: 2px solid #f4f4f4;
     text-align: center;
-    img{
+    .top-img{
       padding-top: 25px;
       width: 90%;
     }
     input{
       border: none;
     }
-    input[type='text']{
+    input{
       &:focus{
         outline: none;
         border-bottom: 1px solid #000;

@@ -53,6 +53,8 @@ gulp.task('headersass', function() {
 gulp.task('libs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		// 'app/libs/magnific-popup/magnific-popup.min.js'
 		])
 		.pipe(concat('libs.min.js'))
