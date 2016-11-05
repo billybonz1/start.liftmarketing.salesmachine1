@@ -55,6 +55,7 @@ gulp.task('libs', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+        'app/libs/jquery.countdown/dist/jquery.countdown.min.js'
 		// 'app/libs/magnific-popup/magnific-popup.min.js'
 		])
 		.pipe(concat('libs.min.js'))
@@ -65,7 +66,7 @@ gulp.task('libs', function() {
 gulp.task('watch', ['sass', 'libs', 'browser-sync'], function() {
 	gulp.watch('app/header.scss', ['headersass']);
 	gulp.watch('app/scss/**/*.scss', ['sass']);
-	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/**/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 

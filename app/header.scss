@@ -212,6 +212,9 @@ header{
     color: $color;
   }
 }
+
+
+
 .border-band{
   width: 38px;
   height: 3px;
@@ -219,7 +222,107 @@ header{
   background-color: #6c6966;
   margin: 65px 0 0 14px;
   vertical-align: top;
+  margin-left: 0;
 }
+.head-info-mod {
+  padding-top: 30px;
+  h2 b, .head-inf-mod b {
+    color: $color-text;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  @media(max-width: 991px){
+    text-align: center;
+  }
+}
+.head-inf-mod {
+  padding-top: 30px;
+  .text-inf {
+    position: relative;
+    display: block;
+    padding-left: 60px;
+    @media(max-width: 991px){
+      text-align: center;
+      padding-left: 0;
+    }
+    p{
+      margin-top: 0;
+      padding-top: 0;
+      padding-left: 0;
+    }
+  }
+  .border-band{
+    margin-top: 0;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+
+}
+h2.thx-h2{
+  padding-top: 60px;
+  @media(max-width: 991px){
+    text-align: center;
+  }
+}
+
+.price{
+  color: $color-text;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  b{
+    border-bottom: 0 !important;
+    font-size: 16px;
+    position: relative;
+    top: -9px;
+    left: -6px;
+  }
+  @media(max-width: 991px){
+    display: block;
+    margin: 20px auto;
+    max-width: 110px;
+    &.price-old{
+      margin-left: auto;
+      &:after{
+        top: 11px;
+      }
+    }
+  }
+}
+
+.price-old{
+  margin-left: 15px;
+  color: #b0b0b0;
+  position: relative;
+  b{
+    color: #b0b0b0 !important;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    width: 74%;
+    height: 2px;
+    background: #636363;
+    left: -6px;
+    top: 17px;
+    transform: rotate(9deg);
+  }
+}
+
+.header-thx{
+  background: url(img/thx-bg.png) no-repeat center top;
+}
+
+.pay{
+  text-align: center;
+  @media(max-width: 406px){
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
 .head-form{
   margin-left: 17px;
   margin-top: 55px;
@@ -295,6 +398,14 @@ header{
   }
 }
 
+.head-info-mod .submit-button{
+  margin-left: 239px;
+  @media(max-width: 991px){
+    margin: 0 auto;
+  }
+
+}
+
 
 .head-inf{
   text-align: left;
@@ -321,4 +432,42 @@ header{
     margin-right: auto;
     text-align: center;
   }
+}
+.countdown{
+  max-width: 403px;
+  width: 100%;
+  height: 419px;
+  background: url(img/countdown.png) no-repeat;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 433px;
+  background-size: contain;
+  text-align: center;
+  margin: 0 auto;
+  & > div{
+    display: inline-block;
+  }
+  @media(max-width: 419px){
+    font-size: 12vw;
+    line-height: 107vw;
+  }
+}
+.countdown-container{
+  padding: 0;
+}
+
+
+.countdown-sep{
+  margin: 0 -14px;
+  color: #e8e8e8;
+  @media(max-width: 354px){
+    margin: 0 -5px;
+  }
+}
+.countdown-minutes{
+  color: #e8e8e8;
+}
+.countdown-seconds{
+  color: #e42a1f;
 }
